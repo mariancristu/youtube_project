@@ -11,6 +11,7 @@ ul {
   padding: 0;
   overflow: hidden;
   background-color: none;
+  display: inline;
 }
 
 li {
@@ -31,16 +32,20 @@ body {
 }
 
 .search-button img {
-  width: 18px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
 }
 
 .search-button {
-  /* margin-top: 0px;*/
-
+  height: auto;
   float: right;
 }
 
 .search-input {
   width: 600px;
+}
+
+#navbar
+{
+  display: flex;
 }
