@@ -1,0 +1,30 @@
+#navbar
+{
+    background:whitesmoke;
+    width: 100%;
+    height: 50px;
+    position: static;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+  }
+  
+li
+{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+body
+{
+    margin: 0%;
+    background: #ececec;;
+}
