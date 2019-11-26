@@ -1,51 +1,109 @@
-#navbar {
-  background: whitesmoke;
+body
+{
+  margin: 0%;
+}
+
+.flexcontainer
+{
+  background:whitesmoke;
+  position: fixed;
   width: 100%;
   height: 50px;
-  position: static;
+  top: 0px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: none;
-  display: inline;
-}
-
-li {
-  float: left;
-  margin-top: 5px;
-  margin-left: 30px;
-}
-
-body {
-  margin: 0%;
-  background: #ececec;
-}
-
-#YT-logo {
-  width: 115px;
-  margin-top: 1px;
-  margin-left: 5px;
-}
-
-.search-button img {
-  width: 15px;
-  height: 15px;
-}
-
-.search-button {
+#youtubeimg
+{
+  width:100px;
   height: auto;
-  float: right;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-.search-input {
-  width: 600px;
+.btnimg
+{
+  width: 15px;
 }
 
-#navbar
+.form
 {
   display: flex;
+  justify-content: center;
 }
+
+.videoicon
+{
+  width: 25px;
+}
+
+.bell 
+{
+  width: 15px;
+}
+
+.melo
+{
+  /*flex:0.5;*/
+  padding-left: 10px;
+}
+
+.all
+{
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+}
+.menu
+{
+  display: inline-block;
+}
+
+.logo
+{
+  display: inline-block;
+}
+
+.searchbar
+{
+  flex: 3;
+  
+}
+
+.searchinput
+{
+  width: 80%;
+  max-width:700px;
+}
+
+.addvideo
+{
+  display: inline-block;
+}
+
+.apps
+{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.notification
+{
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.appscontainer
+{
+  flex: 0.5;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
