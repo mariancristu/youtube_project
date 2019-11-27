@@ -109,7 +109,7 @@ body
 
 .flex2
 {
-  width: 60%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -123,13 +123,23 @@ body
 {
   display: flex;
   flex-direction: column;
-  
+  width: 100%;
+  max-width: 980px;
+  min-height: 100%;
+  flex-basis: 60%;
 }
 
 .thumb_content
 {
   flex-basis: 15%;
   margin-left: 10px;
+}
+
+.video_content iframe
+{
+  width: 100%;
+  max-width: 980px;
+  min-height: inherit;
 }
 
 h5
@@ -160,10 +170,59 @@ h3{
 
 .likebutton p
 {
-  margin-right: 5px;
+  margin-right: 10px;
   text-transform: uppercase;
 }
 
 .but{
   flex: 1;
+}
+
+hr { 
+  display: block;
+  margin-top:0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  border-style: inset;
+  border-width: 0.1em;
+  border-radius: 10px;
+  width: 100%;
+  color: gainsboro;
+} 
+
+.infopost
+{
+  display: flex;
+  justify-items: center;
+  margin-top: 15px;
+}
+
+.logopost
+{
+  width: auto;
+  height: auto;
+  flex:1;
+  display: flex;
+  justify-items: center;
+}
+
+#subscribe
+{
+  
+  width: 130px;
+  height: auto;
+ 
+}
+
+.info
+{
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+
+.in
+{
+  display: block;
 }
