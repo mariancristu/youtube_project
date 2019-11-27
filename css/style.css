@@ -107,7 +107,7 @@ body {
 }
 
 .thumb_content {
-  flex-basis: 15%;
+  flex-basis: 30%;
   margin-left: 10px;
 }
 
@@ -196,6 +196,46 @@ hr {
 
 .upnext {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: baseline;
+  width: auto;
+}
+
+.autoplay
+{
+  display:flex;
+  width: 100%;
+  align-items: center;
+}
+
+.autoplay h4
+{
+  margin: 0;
+  flex:1;
+}
+
+.slidebar
+{
+  display: inline-block;
+  height: 20px;
+}
+
+.bar{
+  background: rgb(224, 224, 224);
+  width: 50px;
+  height: 13px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-left: 5px;
+  box-shadow: inset 1px 1px 2px 0px rgba(0,0,0,0.30); 
+}
+.circle
+{
+  background: grey;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  top: -20px;
+  left: 8px;
 }
