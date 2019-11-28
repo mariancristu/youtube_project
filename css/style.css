@@ -244,9 +244,25 @@ hr {
   margin-top: 13px;
   width: 100%;
   display: flex;
+  text-decoration: none;
 }
 
 .thumbDescriptions {
   display: flex;
   flex-direction: column;
+  margin-left: 10px;
+}
+
+.tSectionHeader {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.channelnViews {
+  display: flex;
+  flex-direction: column;
+}
+
+.channelnViews span {
+  font-size: 14px;
 }
