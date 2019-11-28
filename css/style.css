@@ -88,11 +88,6 @@ body {
   padding-top: 80px;
 }
 
-.flex2 {
-  /*width: 90%;
-  margin: 0 auto;*/
-}
-
 .flexcontainer2 {
   display: flex;
   justify-content: center;
@@ -116,7 +111,6 @@ body {
 .video_content iframe {
   width: 100%;
   max-width: 980px;
-  border: 0;
 }
 
 h5 {
@@ -145,6 +139,23 @@ h3 {
 .likebutton p {
   margin-right: 10px;
   text-transform: uppercase;
+}
+
+.likebutton h5 {
+  flex: 1;
+}
+
+.style_button p {
+  margin-right: 10px;
+  text-transform: uppercase;
+  display: inline;
+}
+
+.style_button {
+  background-color: transparent;
+  border: none;
+  overflow: hidden;
+  cursor: grab;
 }
 
 .but {
@@ -273,10 +284,8 @@ hr {
   flex-direction: column;
 }
 
-.channelnViews h6,
-span {
+.channelnViews span {
   font-size: 14px;
-  margin: 0;
 }
 
 @keyframes right_move {
