@@ -21,10 +21,10 @@
       </div>
 
       <div class="searchbar">
-        <form action="" class="form">
+        <form class="form">
           <input type="text" class="searchinput" />
           <button>
-            <img src="/icons/youtube button.png" alt="" class="btnimg" />
+            <img src="/icons/youtube_button.png" alt="" class="btnimg" />
           </button>
         </form>
       </div>
@@ -52,7 +52,6 @@
               width="687"
               height="386"
               src="https://www.youtube.com/embed/JJSoEo8JSnc"
-              frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
@@ -84,7 +83,7 @@
                 <img id="subscribe" src="images/subscribe.png" alt="" />
               </div>
             </div>
-            <section class="description_box">
+            <div class="description_box">
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
                 suscipit possimus laboriosam dolore quaerat, illo deserunt, quo
@@ -95,81 +94,66 @@
                 ea, repellat impedit recusandae blanditiis deleniti temporibus
                 delectus perferendis?
               </p>
-            </section>
+            </div>
           </div>
           <div class="thumb_content">
             <aside>
-                <div class="upnext">
-                    <div class="autoplay">
-                        <h4>Up next</h4>
-                        <div>
-                            <span>Autoplay</span>
-                            <div class="slidebar" onclick="moveFunction()">
-                                <div class="bar"></div>
-                                <div class="circle" id="circle"></div>
-                            </div>
-                        </div>
+              <div class="upnext">
+                <div class="autoplay">
+                  <h4>Up next</h4>
+                  <div>
+                    <span>Autoplay</span>
+                    <div class="slidebar" onclick="moveFunction()">
+                      <div class="bar"></div>
+                      <div class="circle" id="circle"></div>
                     </div>
-                      <a class= "thumbs" href="https://www.youtube.com/watch?v=EFafSYg-PkI" >
-                        <img src="/images/videothumbnail.jpg" alt="Css course">
-                        
-                        <section class="thumbDescriptions">
-                           
-                          <h4 class="tSectionHeader"> CSS Grid Crash Course</h4>
-
-                           <section class="channelnViews">
-
-                           <span> Dev Ed</span>
-                           <span> 94,542 views</span>
-
-                          </section>
-
-                      </section>
-
-
-
-                      </a>
-                      <a class= "thumbs" href="https://www.youtube.com/watch?v=EFafSYg-PkI" >
-                        <img src="/images/videothumbnail.jpg" alt="Css course">
-                        
-                        <section class="thumbDescriptions">
-                           
-                          <h4 class="tSectionHeader"> CSS Grid Crash Course</h4>
-
-                           <section class="channelnViews">
-
-                           <span> Dev Ed</span>
-                           <span> 94,542 views</span>
-
-                          </section>
-
-                      </section>
-
-
-
-                      </a>
-                      <a class= "thumbs" href="https://www.youtube.com/watch?v=EFafSYg-PkI" >
-                        <img src="/images/videothumbnail.jpg" alt="Css course">
-                        
-                        <section class="thumbDescriptions">
-                           
-                          <h4 class="tSectionHeader"> CSS Grid Crash Course</h4>
-
-                           <section class="channelnViews">
-
-                           <span> Dev Ed</span>
-                           <span> 94,542 views</span>
-
-                          </section>
-
-                      </section>
-
-
-
-                      </a>
-
-                    
+                  </div>
                 </div>
+                <a
+                  class="thumbs"
+                  href="https://www.youtube.com/watch?v=EFafSYg-PkI"
+                >
+                  <img src="/images/videothumbnail.jpg" alt="Css course" />
+
+                  <section class="thumbDescriptions">
+                    <h4 class="tSectionHeader">CSS Grid Crash Course</h4>
+
+                    <section class="channelnViews">
+                      <h6>Dev Ed</h6>
+                      <span>94,542 views</span>
+                    </section>
+                  </section>
+                </a>
+                <a
+                  class="thumbs"
+                  href="https://www.youtube.com/watch?v=EFafSYg-PkI"
+                >
+                  <img src="/images/videothumbnail.jpg" alt="Css course" />
+
+                  <section class="thumbDescriptions">
+                    <h4 class="tSectionHeader">CSS Grid Crash Course</h4>
+
+                    <section class="channelnViews">
+                      <h6>Dev Ed</h6>
+                      <span>94,542 views</span>
+                    </section>
+                  </section>
+                </a>
+                <a
+                  class="thumbs"
+                  href="https://www.youtube.com/watch?v=EFafSYg-PkI"
+                >
+                  <img src="/images/videothumbnail.jpg" alt="Css course" />
+
+                  <section class="thumbDescriptions">
+                    <h4 class="tSectionHeader">CSS Grid Crash Course</h4>
+
+                    <section class="channelnViews">
+                      <h6>Dev Ed</h6>
+                      <span>94,542 views</span>
+                    </section>
+                  </section>
+                </a>
               </div>
             </aside>
           </div>
@@ -177,28 +161,23 @@
       </div>
     </div>
     <script>
-       var x = document.getElementById('circle')
-       const element  = document.querySelector('#circle');
-       var l = getComputedStyle(element).left;
-      function moveFunction()
-      {
-         if(l=='8px')
-         {
-            x.style.webkitAnimation = "right_move 0.5s 1 forwards";
-            x.style.animation = "right_move 0.5s 1 forwards";
-         }
-         else
-         {
-            x.style.webkitAnimation = "left_move 0.5s 1 forwards"
-            x.style.animation = "left_move 0.5s 1 forwards" 
-         }
+      var x = document.getElementById("circle");
+      const element = document.querySelector("#circle");
+      var l = getComputedStyle(element).left;
+      function moveFunction() {
+        if (l == "8px") {
+          x.style.webkitAnimation = "right_move 0.5s 1 forwards";
+          x.style.animation = "right_move 0.5s 1 forwards";
+        } else {
+          x.style.webkitAnimation = "left_move 0.5s 1 forwards";
+          x.style.animation = "left_move 0.5s 1 forwards";
+        }
       }
 
-      x.addEventListener("webkitAnimationEnd",position1);
+      x.addEventListener("webkitAnimationEnd", position1);
 
-      function position1()
-      {
-        l=getComputedStyle(element).left;
+      function position1() {
+        l = getComputedStyle(element).left;
       }
     </script>
   </body>
