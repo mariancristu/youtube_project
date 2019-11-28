@@ -104,9 +104,9 @@
                         <h4>Up next</h4>
                         <div>
                             <span>Autoplay</span>
-                            <div class="slidebar">
+                            <div class="slidebar" onclick="moveFunction()">
                                 <div class="bar"></div>
-                                <div class="circle"></div>
+                                <div class="circle" id="circle"></div>
                             </div>
                         </div>
                     </div>
@@ -176,5 +176,30 @@
         </div>
       </div>
     </div>
+    <script>
+       var x = document.getElementById('circle')
+       const element  = document.querySelector('#circle');
+       var l = getComputedStyle(element).left;
+      function moveFunction()
+      {
+         if(l=='8px')
+         {
+            x.style.webkitAnimation = "right_move 0.5s 1 forwards";
+            x.style.animation = "right_move 0.5s 1 forwards";
+         }
+         else
+         {
+            x.style.webkitAnimation = "left_move 0.5s 1 forwards"
+            x.style.animation = "left_move 0.5s 1 forwards" 
+         }
+      }
+
+      x.addEventListener("webkitAnimationEnd",position1);
+
+      function position1()
+      {
+        l=getComputedStyle(element).left;
+      }
+    </script>
   </body>
 </html>

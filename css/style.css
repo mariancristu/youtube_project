@@ -12,6 +12,7 @@ body {
   justify-content: flex-start;
   flex-direction: row;
   align-items: center;
+  z-index: 1;
 }
 
 #youtubeimg {
@@ -88,13 +89,14 @@ body {
 }
 
 .flex2 {
-  width: 90%;
-  margin: 0 auto;
+  /*width: 90%;
+  margin: 0 auto;*/
 }
 
 .flexcontainer2 {
   display: flex;
   justify-content: center;
+  flex-flow: wrap;
 }
 
 .video_content {
@@ -114,7 +116,7 @@ body {
 .video_content iframe {
   width: 100%;
   max-width: 980px;
-  min-height: inherit;
+  
 }
 
 h5 {
@@ -227,13 +229,17 @@ hr {
   box-shadow: inset 1px 1px 2px 0px rgba(0, 0, 0, 0.3);
 }
 .circle {
-  background: grey;
+  background: radial-gradient(circle, rgba(230,229,229,1) 0%, rgba(176,172,172,1) 100%);
+  border-width: 1px;
+  border-color: rgb(163, 163, 163);
+  border-style: solid;
   width: 20px;
   height: 20px;
   border-radius: 50%;
   position: relative;
   top: -20px;
   left: 8px;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.50);
 }
 
 .thumbs img {
@@ -266,3 +272,28 @@ hr {
 .channelnViews span {
   font-size: 14px;
 }
+
+@keyframes right_move
+{
+  from{left:8px;}
+  to{left:28px;}
+}
+
+@-webkit-keyframes right_move
+{
+  from{left:8px;}
+  to{left:28px;}
+}
+
+@keyframes left_move
+{
+  from{left:28px;}
+  to{left:8px;}
+}
+
+@-webkit-keyframes left_move
+{
+  from{left:28px;}
+  to{left:8px;}
+}
+
