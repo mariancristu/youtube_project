@@ -86,6 +86,7 @@ body {
 
 .allcontent {
   padding-top: 80px;
+  margin-left: 5%;
 }
 
 .flexcontainer2 {
@@ -98,9 +99,9 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 980px;
+  max-width: 100%;
   min-height: 100%;
-  flex-basis: 60%;
+  flex-basis: 69%;
 }
 
 .thumb_content {
@@ -111,6 +112,9 @@ body {
 .video_content iframe {
   width: 100%;
   max-width: 980px;
+  border: 0;
+  min-height: 70%;
+  min-width: 100%;
 }
 
 h5 {
@@ -136,8 +140,8 @@ h3 {
   margin-right: 5px;
 }
 
-.likebutton p {
-  margin-right: 10px;
+.likebutton span {
+  margin-right: 13px;
   text-transform: uppercase;
 }
 
@@ -164,7 +168,6 @@ h3 {
 
 hr {
   display: block;
-  margin-top: 0;
   margin-bottom: 0;
   margin-left: 0;
   margin-right: 0;
@@ -205,6 +208,12 @@ hr {
 
 .description_box {
   text-align: justify;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin-left: 64px;
+  max-width: 615px;
+  min-width: 400px;
 }
 
 .upnext {
@@ -212,6 +221,7 @@ hr {
   flex-direction: column;
   align-items: baseline;
   width: auto;
+  margin-left: 2.5%;
 }
 
 .autoplay {
@@ -222,7 +232,9 @@ hr {
 
 .autoplay h4 {
   margin: 0;
-  flex: 1;
+  flex-grow: 0.73;
+  flex-shrink: 1;
+  flex-basis: 0%;
 }
 
 .slidebar {
@@ -284,7 +296,8 @@ hr {
   flex-direction: column;
 }
 
-.channelnViews span {
+.channelnViews span,
+h5 {
   font-size: 14px;
 }
 
@@ -322,4 +335,12 @@ hr {
   to {
     left: 8px;
   }
+}
+
+.info strong {
+  font-size: medium;
+}
+
+.video-title {
+  font-size: larger;
 }
